@@ -4,14 +4,14 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "docker.dockerproxy.blockchaintech.fun": "https://registry-1.docker.io",
-  "quay.dockerproxy.blockchaintech.fun": "https://quay.io",
-  "gcr.dockerproxy.blockchaintech.fun": "https://gcr.io",
-  "k8s-gcr.dockerproxy.blockchaintech.fun": "https://k8s.gcr.io",
-  "k8s.dockerproxy.blockchaintech.fun": "https://registry.k8s.io",
-  "ghcr.dockerproxy.blockchaintech.fun": "https://ghcr.io",
-  "cloudsmith.dockerproxy.blockchaintech.fun": "https://docker.cloudsmith.io",
-};
+    "docker.blockchaintech.fun": "https://registry-1.docker.io",
+    "quay.blockchaintech.fun": "https://quay.io",
+    "gcr.blockchaintech.fun": "https://gcr.io",
+    "k8s-gcr.blockchaintech.fun": "https://k8s.gcr.io",
+    "k8s.blockchaintech.fun": "https://registry.k8s.io",
+    "ghcr.blockchaintech.fun": "https://ghcr.io",
+    "cloudsmith.blockchaintech.fun": "https://docker.cloudsmith.io",
+  };
 
 function routeByHosts(host) {
   if (host in routes) {
